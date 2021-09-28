@@ -112,7 +112,7 @@ header{
   background-image: url('/homework5-2021/images/header.jpg');
   background-repeat: no-repeat;
   grid-column: 1 / -1;
-  grid-row: 1 / span1;
+  grid-row: 1 / span 1;
 
 }
 
@@ -181,7 +181,7 @@ header{
     padding: 30px 0;
 
     /* Your code here */
-    
+    text-align: right;
   }
 
   .container{
@@ -189,8 +189,6 @@ header{
    grid-template-columns: 50px auto 500px auto 50px;
    grid-template-rows: 400px 400px 400px 400px 400px;
   }
-
-  
 
   .about-image{
     grid-column: 2 / span 2;
