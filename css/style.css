@@ -76,14 +76,13 @@ a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-
   /* Requirement 3a code here*/
-  /* position: */
+  display: none;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  /* position:absolute; */
+  position: absolute;
 }
 
 /* Requirement 4 code here*/
@@ -109,13 +108,17 @@ header{
   background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
-  background-image: url('header.jpg');
-  background-repeat: no-repeat;
   /* YOUR CODE HERE; */
+  background-image: url('/homework4-2021/images/header.jpg');
+  background-repeat: no-repeat;
+
 }
 
 .about-image{
-  
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .about{
@@ -124,7 +127,11 @@ header{
 }
 
 .method-image{
- grid-column: 
+ grid-column: 1 / span 3;
+ grid-row: 3 / span 1;
+ max-height: 700px;
+ overflow: hidden;
+
 }
 
 .method{
@@ -136,7 +143,26 @@ header{
 
 .contact{
   grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.clients{
+  grid-column: 2 / span 1;
   grid-row: 4 / span 1;
+}
+
+.clients-image{
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.contact-image{
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .text-block{
@@ -146,7 +172,6 @@ header{
 
   /* Your code here */
   margin: auto auto;
-  vertical-align: center;
 }
 
 @media screen and (min-width: 800px){
@@ -154,7 +179,7 @@ header{
     padding: 30px 0;
 
     /* Your code here */
-    align
+    
   }
 
   .container{
@@ -190,13 +215,12 @@ header{
   }
 
   .contact-image{
-    
-  }
-
-  .contact{
     grid-column: 3 / span 2;
   }
 
+  .contact{
+    grid-column: 2 / span 2;
+  }
 }
 
 
