@@ -83,7 +83,7 @@ a:hover{
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  top: 0px;
+  top: inherit;
 }
 /* Requirement 4 code here*/
 
