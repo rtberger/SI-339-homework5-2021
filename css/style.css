@@ -77,13 +77,13 @@ a:hover{
   transition: top 1s ease-out;
   z-index: 1;
   /* Requirement 3a code here*/
+  min-height: 40px;
   display: none;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  position: absolute;
-}
+  align-items: flex-start;
 
 /* Requirement 4 code here*/
 
