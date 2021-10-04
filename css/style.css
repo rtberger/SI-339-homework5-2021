@@ -84,7 +84,7 @@ a:hover{
 /* Requirement 3b code here*/
 .skip a:focus{
   align-items: flex-start;
-
+}
 /* Requirement 4 code here*/
 
 *:focus{
