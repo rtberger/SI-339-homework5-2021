@@ -77,13 +77,13 @@ a:hover{
   transition: top 1s ease-out;
   z-index: 1;
   /* Requirement 3a code here*/
-  min-height: 40px;
-  display: none;
+  position: absolute;
+  top: -40px;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  align-items: flex-start;
+  top: 0px;
 }
 /* Requirement 4 code here*/
 
@@ -171,7 +171,7 @@ header{
   padding: 30px;
 
   /* Your code here */
-  margin: auto auto;
+  align-self: center;
 }
 
 @media screen and (min-width: 800px){
